@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordens de Serviço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Ordens de Serviço</h1>
+    
+    <form id="order-form">
+        <input type="text" id="cliente" placeholder="Nome do Cliente" required>
+        <input type="text" id="equipamento" placeholder="Equipamento" required>
+        <textarea id="descricao" placeholder="Descrição do Problema" required></textarea>
+        
+        <label>Data de Entrada:</label>
+        <input type="date" id="dataEntrada" required>
+
+        <label>Status:</label>
+        <textarea id="status" placeholder="Detalhes do status atual" required></textarea>
+
+        <button type="submit">Cadastrar Ordem</button>
+    </form>
+
+    <br><br>
+
+    <h2>Ordens de Serviço Cadastradas</h2>
+    
+    <!-- Tabela para exibir as ordens cadastradas -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Equipamento</th>
+                <th>Código de Status</th>
+                <th>Descrição</th>
+                <th>Entrada</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="order-list">
+            <!-- Aqui as ordens serão adicionadas pelo JavaScript -->
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <button id="logout-btn">Sair</button>
+
+    <!-- <script type="module" src="login.js"></script> -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

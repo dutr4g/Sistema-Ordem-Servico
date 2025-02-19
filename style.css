@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0A1931;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+
+.container {
+    background: #162447;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px; 
+    text-align: left;
+    border: 1px solid white; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #1F4068;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #E43F5A;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Botões de ações */
+#check-status, #voltarLogin {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#check-status:hover, #voltarLogin:hover {
+    background-color: white;
+    color: #0A1931;
+}
+
+/* Lista de ordens de serviço */
+.order-list {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.order-list li {
+    background: #1F4068;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Inputs e botões dentro das ordens */
+.order-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Organização dos botões dentro da ordem */
+.order-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.order-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+}
